@@ -1,0 +1,188 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.image.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane prefHeight="495.0" prefWidth="656.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.ControladorVUChat">
+   <children>
+      <VBox layoutX="158.0" layoutY="58.0" prefHeight="200.0" prefWidth="100.0" stylesheets="@styles.css" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <children>
+            <HBox prefHeight="100.0" prefWidth="200.0" VBox.vgrow="ALWAYS">
+               <children>
+                  <VBox prefHeight="614.0" prefWidth="134.0">
+                     <children>
+                        <HBox alignment="CENTER" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="78.0" prefWidth="138.0" style="-fx-background-color: #3d4956;">
+                           <children>
+                              <ImageView fitHeight="53.0" fitWidth="55.0" pickOnBounds="true" preserveRatio="true" styleClass="cursor_hand" HBox.hgrow="ALWAYS">
+                                 <effect>
+                                    <ColorAdjust contrast="0.64" />
+                                 </effect>
+                                 <image>
+                                    <Image url="@../../data/Abuelo.png" />
+                                 </image>
+                              </ImageView>
+                              <Text fill="WHITE" strokeType="OUTSIDE" strokeWidth="0.0" text="Los Abuelos" />
+                           </children>
+                        </HBox>
+                        <VBox prefHeight="200.0" prefWidth="100.0" style="-fx-background-color: #3d4956;" VBox.vgrow="ALWAYS">
+                           <children>
+                              <HBox alignment="CENTER_LEFT" styleClass="hover_border">
+                                 <VBox.margin>
+                                    <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                                 </VBox.margin>
+                                 <padding>
+                                    <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+                                 </padding>
+                                 <children>
+                                    <ImageView fitHeight="19.0" fitWidth="19.0" pickOnBounds="true" preserveRatio="true">
+                                       <image>
+                                          <Image url="@../../data/Ojo.png" />
+                                       </image>
+                                    </ImageView>
+                                    <Button fx:id="btnVerDatos" mnemonicParsing="false" onAction="#AbrirVerDatos" style="-fx-background-color: transparent;" text="Ver Datos" textFill="#bfbfbf" />
+                                  
+                                 </children>
+                              </HBox>
+                              <HBox alignment="CENTER_LEFT" styleClass="hover_border">
+                                 <children>
+                                    <ImageView fitHeight="18.0" fitWidth="18.0" pickOnBounds="true" preserveRatio="true">
+                                       <image>
+                                          <Image url="@../../data/Sensor.png" />
+                                       </image>
+                                    </ImageView>
+                                    <Button fx:id="btnVerInfo" mnemonicParsing="false" onAction="#AbrirVerInfo" style="-fx-background-color: transparent;" text="Ver Info Sensores" textFill="#bfbfbf" />
+                                 </children>
+                                 <padding>
+                                    <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+                                 </padding>
+                                 <VBox.margin>
+                                    <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                                 </VBox.margin>
+                              </HBox>
+                              <HBox alignment="CENTER_LEFT" styleClass="hover_border">
+                                 <children>
+                                    <ImageView fitHeight="18.0" fitWidth="18.0" pickOnBounds="true" preserveRatio="true">
+                                       <image>
+                                          <Image url="@../../data/Mensajes.png" />
+                                       </image>
+                                       <HBox.margin>
+                                          <Insets />
+                                       </HBox.margin>
+                                    </ImageView>
+                                    <Button fx:id="btnChat" mnemonicParsing="false" style="-fx-background-color: transparent;" text="Chat" textFill="#bfbfbf">
+                                       <HBox.margin>
+                                          <Insets />
+                                       </HBox.margin>
+                                    </Button>
+                                 </children>
+                                 <padding>
+                                    <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+                                 </padding>
+                                 <VBox.margin>
+                                    <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                                 </VBox.margin>
+                              </HBox>
+                              <HBox alignment="CENTER_LEFT" styleClass="hover_border">
+                                 <children>
+                                    <ImageView fitHeight="18.0" fitWidth="18.0" pickOnBounds="true" preserveRatio="true">
+                                       <image>
+                                          <Image url="@../../data/Info.png" />
+                                       </image>
+                                       <HBox.margin>
+                                          <Insets />
+                                       </HBox.margin>
+                                    </ImageView>
+                                    <Button fx:id="btnAyuda" mnemonicParsing="false" onAction="#AbrirAyuda" style="-fx-background-color: transparent;" text="Ayuda" textFill="#bfbfbf">
+                                       <HBox.margin>
+                                          <Insets />
+                                       </HBox.margin>
+                                    </Button>
+                                 </children>
+                                 <padding>
+                                    <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+                                 </padding>
+                                 <VBox.margin>
+                                    <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                                 </VBox.margin>
+                              </HBox>
+                              <HBox alignment="CENTER_LEFT" styleClass="hover_border">
+                                 <children>
+                                    <ImageView fitHeight="18.0" fitWidth="18.0" pickOnBounds="true" preserveRatio="true">
+                                       <image>
+                                          <Image url="@../../data/Logout.png" />
+                                       </image>
+                                    </ImageView>
+                                    <Button fx:id="btnLogOut" mnemonicParsing="false" onAction="#Logout" style="-fx-background-color: transparent;" text="Log Out" textFill="#bfbfbf" />
+                                 </children>
+                                 <padding>
+                                    <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+                                 </padding>
+                                 <VBox.margin>
+                                    <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                                 </VBox.margin>
+                              </HBox>
+                              <HBox alignment="CENTER_LEFT" styleClass="hover_border">
+                                 <children>
+                                    <ImageView fitHeight="18.0" fitWidth="18.0" pickOnBounds="true" preserveRatio="true">
+                                       <image>
+                                          <Image url="@../../data/Salir.png" />
+                                       </image>
+                                    </ImageView>
+                                    <Button fx:id="btnSalir" mnemonicParsing="false" onAction="#Salir" style="-fx-background-color: transparent;" text="Salir" textFill="#bfbfbf" />
+                                 </children>
+                                 <padding>
+                                    <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+                                 </padding>
+                                 <VBox.margin>
+                                    <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                                 </VBox.margin>
+                              </HBox>
+                           </children>
+                        </VBox>
+                     </children>
+                  </VBox>
+                  <VBox prefHeight="495.0" prefWidth="604.0" HBox.hgrow="ALWAYS">
+                     <children>
+                        <HBox alignment="CENTER" prefHeight="78.0" prefWidth="510.0" style="-fx-background-color: white;">
+                           <children>
+                              <Text fill="#a79f9b" strokeType="OUTSIDE" strokeWidth="0.0" style="-fx-font-size: 1.4em;" text="Sistema de manejo de pacientes">
+                                 <HBox.margin>
+                                    <Insets left="15.0" />
+                                 </HBox.margin>
+                              </Text>
+                              <HBox alignment="CENTER_RIGHT" prefHeight="100.0" prefWidth="200.0">
+                                 <children>
+                                    <ImageView fitHeight="23.0" fitWidth="26.0" pickOnBounds="true" preserveRatio="true" style="-fx-font-family: 1.2em;" styleClass="cursor_hand" HBox.hgrow="ALWAYS">
+                                       <image>
+                                          <Image url="@../../data/UserVacio.png" />
+                                       </image>
+                                       <HBox.margin>
+                                          <Insets left="10.0" right="5.0" />
+                                       </HBox.margin>
+                                    </ImageView>
+                                    <Text fill="#a79f9b" strokeType="OUTSIDE" strokeWidth="0.0" style="-fx-font-size: 0.8em;" styleClass="cursor_hand" text="Nombre User" HBox.hgrow="ALWAYS">
+                                       <HBox.margin>
+                                          <Insets right="5.0" />
+                                       </HBox.margin>
+                                    </Text>
+                                 </children>
+                              </HBox>
+                           </children>
+                        </HBox>
+                        <Label text="Estas en Chat" translateX="225.0" translateY="200.0" />
+                     </children>
+                  </VBox>
+               </children>
+            </HBox>
+         </children>
+      </VBox>
+
+
+   </children>
+</AnchorPane>

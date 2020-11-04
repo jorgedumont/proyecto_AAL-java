@@ -1,0 +1,16 @@
+
+.hover_border:hover{
+	-fx-border-color: #f8c291;
+	-fx-border-width: 0px 0px 2px 0px;
+	-fx-background-color:  #f8c291;
+	-fx-cursor: hand;
+}
+.hover_border1:hover{
+	-fx-border-color:  #f8c291;
+	-fx-border-width: 0px 0px 0px 0px;
+	-fx-background-color:  #f8c291;
+	-fx-cursor: hand;
+}
+.cursor_hand{
+	-fx-cursor: hand;
+}

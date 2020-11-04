@@ -1,0 +1,512 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.image.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane prefHeight="501.0" prefWidth="826.0" stylesheets="@styles.css" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <VBox layoutX="158.0" layoutY="58.0" prefHeight="200.0" prefWidth="100.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <children>
+            <HBox prefHeight="100.0" prefWidth="200.0" VBox.vgrow="ALWAYS">
+               <children>
+                  <VBox prefHeight="614.0" prefWidth="134.0">
+                     <children>
+                        <HBox alignment="CENTER" prefHeight="78.0" prefWidth="138.0" style="-fx-background-color: #3d4956;">
+                           <children>
+                              <ImageView fitHeight="53.0" fitWidth="55.0" pickOnBounds="true" preserveRatio="true" styleClass="cursor_hand" HBox.hgrow="ALWAYS">
+                                 <effect>
+                                    <ColorAdjust contrast="0.64" />
+                                 </effect>
+                                 <image>
+                                    <Image url="@../../data/Abuelo.png" />
+                                 </image>
+                              </ImageView>
+                              <Text fill="WHITE" strokeType="OUTSIDE" strokeWidth="0.0" text="Los Abuelos" />
+                           </children>
+                        </HBox>
+                        <VBox prefHeight="200.0" prefWidth="100.0" style="-fx-background-color: #3d4956;" VBox.vgrow="ALWAYS">
+                           <children>
+                              <HBox alignment="CENTER_LEFT" styleClass="hover_border">
+                                 <VBox.margin>
+                                    <Insets top="30.0" />
+                                 </VBox.margin>
+                                 <padding>
+                                    <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+                                 </padding>
+                                 <children>
+                                    <ImageView fitHeight="18.0" fitWidth="18.0" pickOnBounds="true" preserveRatio="true">
+                                       <HBox.margin>
+                                          <Insets />
+                                       </HBox.margin>
+                                       <image>
+                                          <Image url="@../../data/Inicio.png" />
+                                       </image>
+                                    </ImageView>
+                                    <Text fill="#fffefe" strokeType="OUTSIDE" strokeWidth="0.0" text="Inicio">
+                                       <HBox.margin>
+                                          <Insets left="10.0" />
+                                       </HBox.margin>
+                                    </Text>
+                                 </children>
+                              </HBox>
+                              <HBox alignment="CENTER_LEFT" styleClass="hover_border">
+                                 <children>
+                                    <ImageView fitHeight="18.0" fitWidth="18.0" pickOnBounds="true" preserveRatio="true">
+                                       <HBox.margin>
+                                          <Insets />
+                                       </HBox.margin>
+                                       <image>
+                                          <Image url="@../../data/AnadirPaciente.png" />
+                                       </image>
+                                    </ImageView>
+                                    <Text fill="#fffefe" strokeType="OUTSIDE" strokeWidth="0.0" text="Añadir Paciente">
+                                       <HBox.margin>
+                                          <Insets left="10.0" />
+                                       </HBox.margin>
+                                    </Text>
+                                 </children>
+                                 <padding>
+                                    <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+                                 </padding>
+                                 <VBox.margin>
+                                    <Insets top="10.0" />
+                                 </VBox.margin>
+                              </HBox>
+                              <HBox alignment="CENTER_LEFT" styleClass="hover_border">
+                                 <children>
+                                    <ImageView fitHeight="18.0" fitWidth="18.0" pickOnBounds="true" preserveRatio="true">
+                                       <HBox.margin>
+                                          <Insets />
+                                       </HBox.margin>
+                                       <image>
+                                          <Image url="@../../data/UserVacio.png" />
+                                       </image>
+                                    </ImageView>
+                                    <Text fill="#fffefe" strokeType="OUTSIDE" strokeWidth="0.0" text="Ver Paciente">
+                                       <HBox.margin>
+                                          <Insets left="10.0" />
+                                       </HBox.margin>
+                                    </Text>
+                                 </children>
+                                 <padding>
+                                    <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+                                 </padding>
+                                 <VBox.margin>
+                                    <Insets top="10.0" />
+                                 </VBox.margin>
+                              </HBox>
+                              <HBox alignment="CENTER_LEFT" styleClass="hover_border">
+                                 <children>
+                                    <ImageView fitHeight="18.0" fitWidth="18.0" pickOnBounds="true" preserveRatio="true">
+                                       <HBox.margin>
+                                          <Insets />
+                                       </HBox.margin>
+                                       <image>
+                                          <Image url="@../../data/Info.png" />
+                                       </image>
+                                    </ImageView>
+                                    <Text fill="#fffefe" strokeType="OUTSIDE" strokeWidth="0.0" text="Ayuda">
+                                       <HBox.margin>
+                                          <Insets left="10.0" />
+                                       </HBox.margin>
+                                    </Text>
+                                 </children>
+                                 <padding>
+                                    <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+                                 </padding>
+                                 <VBox.margin>
+                                    <Insets top="10.0" />
+                                 </VBox.margin>
+                              </HBox>
+                              <HBox alignment="CENTER_LEFT" styleClass="hover_border">
+                                 <children>
+                                    <ImageView fitHeight="18.0" fitWidth="18.0" pickOnBounds="true" preserveRatio="true">
+                                       <HBox.margin>
+                                          <Insets />
+                                       </HBox.margin>
+                                       <image>
+                                          <Image url="@../../data/Logout.png" />
+                                       </image>
+                                    </ImageView>
+                                    <Text fill="#fffefe" strokeType="OUTSIDE" strokeWidth="0.0" text="Log out">
+                                       <HBox.margin>
+                                          <Insets left="10.0" />
+                                       </HBox.margin>
+                                    </Text>
+                                 </children>
+                                 <padding>
+                                    <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+                                 </padding>
+                                 <VBox.margin>
+                                    <Insets top="10.0" />
+                                 </VBox.margin>
+                              </HBox>
+                              <HBox alignment="CENTER_LEFT" styleClass="hover_border">
+                                 <children>
+                                    <ImageView fitHeight="18.0" fitWidth="18.0" pickOnBounds="true" preserveRatio="true">
+                                       <HBox.margin>
+                                          <Insets />
+                                       </HBox.margin>
+                                       <image>
+                                          <Image url="@../../data/Salir.png" />
+                                       </image>
+                                    </ImageView>
+                                    <Text fill="#fffefe" strokeType="OUTSIDE" strokeWidth="0.0" text="Salir">
+                                       <HBox.margin>
+                                          <Insets left="10.0" />
+                                       </HBox.margin>
+                                    </Text>
+                                 </children>
+                                 <padding>
+                                    <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+                                 </padding>
+                                 <VBox.margin>
+                                    <Insets top="10.0" />
+                                 </VBox.margin>
+                              </HBox>
+                           </children>
+                        </VBox>
+                     </children>
+                  </VBox>
+                  <VBox prefHeight="200.0" prefWidth="100.0" HBox.hgrow="ALWAYS">
+                     <children>
+                        <HBox alignment="CENTER_RIGHT" prefHeight="78.0" prefWidth="446.0" style="-fx-background-color: white;">
+                           <children>
+                              <Text fill="#a79f9b" strokeType="OUTSIDE" strokeWidth="0.0" style="-fx-font-size: 1.4em;" text="Sistema de manejo de pacientes">
+                                 <HBox.margin>
+                                    <Insets right="1.0" />
+                                 </HBox.margin></Text>
+                              <HBox alignment="CENTER_RIGHT" prefHeight="100.0" prefWidth="50.0">
+                                 <children>
+                                    <ImageView fitHeight="23.0" fitWidth="26.0" pickOnBounds="true" preserveRatio="true" style="-fx-font-family: 1.2em;" styleClass="cursor_hand" HBox.hgrow="ALWAYS">
+                                       <image>
+                                          <Image url="@../../data/UserVacio.png" />
+                                       </image>
+                                       <HBox.margin>
+                                          <Insets left="10.0" right="5.0" />
+                                       </HBox.margin>
+                                    </ImageView>
+                                    <Text fill="#a79f9b" strokeType="OUTSIDE" strokeWidth="0.0" style="-fx-font-size: 0.8em;" styleClass="cursor_hand" text="Nombre Amin" HBox.hgrow="ALWAYS">
+                                       <HBox.margin>
+                                          <Insets right="5.0" />
+                                       </HBox.margin>
+                                    </Text>
+                                 </children>
+                                 <HBox.margin>
+                                    <Insets right="1.0" />
+                                 </HBox.margin>
+                              </HBox>
+                           </children>
+                           <VBox.margin>
+                              <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                           </VBox.margin>
+                        </HBox>
+                        <VBox style="-fx-background-color: white;">
+                           <opaqueInsets>
+                              <Insets />
+                           </opaqueInsets>
+                           <padding>
+                              <Insets bottom="20.0" left="20.0" right="20.0" top="20.0" />
+                           </padding>
+                           <VBox.margin>
+                              <Insets />
+                           </VBox.margin>
+                           <children>
+                              <Separator prefWidth="200.0" />
+                              <HBox alignment="CENTER" prefHeight="78.0" prefWidth="426.0" stylesheets="@styles.css">
+                                 <padding>
+                                    <Insets bottom="20.0" left="20.0" right="20.0" top="20.0" />
+                                 </padding>
+                                 <children>
+                                    <HBox alignment="CENTER" style="-fx-background-color: white;" styleClass="cursor_hand">
+                                       <children>
+                                          <ImageView fitHeight="40.0" fitWidth="33.0" pickOnBounds="true" preserveRatio="true">
+                                             <image>
+                                                <Image url="@../../data/Registro.png" />
+                                             </image>
+                                          </ImageView>
+                                          <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Registro" wrappingWidth="59.2001953125" />
+                                          <VBox prefHeight="200.0" prefWidth="100.0">
+                                             <children>
+                                                <HBox alignment="CENTER" style="-fx-background-color: transparent; -fx-border-color: #a2a2a2; -fx-border-width: 0px 0px 2px 0px;">
+                                                   <children>
+                                                      <TextField fx:id="TxtFNickname131" disable="true" prefHeight="23.0" prefWidth="19.0" style="-fx-background-color: transparent;" HBox.hgrow="ALWAYS">
+                                                         <font>
+                                                            <Font size="12.0" />
+                                                         </font>
+                                                         <HBox.margin>
+                                                            <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                                                         </HBox.margin>
+                                                      </TextField>
+                                                   </children>
+                                                </HBox>
+                                             </children>
+                                          </VBox>
+                                       </children>
+                                       <padding>
+                                          <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+                                       </padding>
+                                       <effect>
+                                          <DropShadow height="10.0" radius="4.5" width="10.0" />
+                                       </effect>
+                                       <HBox.margin>
+                                          <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+                                       </HBox.margin>
+                                    </HBox>
+                                    <HBox alignment="CENTER" style="-fx-background-color: white;" styleClass="cursor_hand">
+                                       <children>
+                                          <ImageView fitHeight="32.0" fitWidth="31.0" pickOnBounds="true" preserveRatio="true">
+                                             <image>
+                                                <Image url="@../../data/UserRelleno.png" />
+                                             </image>
+                                          </ImageView>
+                                          <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Hombre" wrappingWidth="59.2001953125" />
+                                          <VBox prefHeight="200.0" prefWidth="100.0">
+                                             <children>
+                                                <HBox alignment="CENTER" style="-fx-background-color: transparent; -fx-border-color: #a2a2a2; -fx-border-width: 0px 0px 2px 0px;">
+                                                   <children>
+                                                      <TextField fx:id="TxtFNickname13" disable="true" prefHeight="23.0" prefWidth="19.0" style="-fx-background-color: transparent;" HBox.hgrow="ALWAYS">
+                                                         <font>
+                                                            <Font size="12.0" />
+                                                         </font>
+                                                         <HBox.margin>
+                                                            <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                                                         </HBox.margin>
+                                                      </TextField>
+                                                   </children>
+                                                </HBox>
+                                             </children>
+                                          </VBox>
+                                       </children>
+                                       <padding>
+                                          <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+                                       </padding>
+                                       <effect>
+                                          <DropShadow height="10.0" radius="4.5" width="10.0" />
+                                       </effect>
+                                       <HBox.margin>
+                                          <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+                                       </HBox.margin>
+                                    </HBox>
+                                    <HBox alignment="CENTER" style="-fx-background-color: white;" styleClass="cursor_hand">
+                                       <children>
+                                          <ImageView fitHeight="32.0" fitWidth="31.0" pickOnBounds="true" preserveRatio="true">
+                                             <image>
+                                                <Image url="@../../data/UserWomenRelleno.png" />
+                                             </image>
+                                          </ImageView>
+                                          <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Mujer" wrappingWidth="59.2001953125" />
+                                          <VBox prefHeight="200.0" prefWidth="100.0">
+                                             <children>
+                                                <HBox alignment="CENTER" style="-fx-background-color: transparent; -fx-border-color: #a2a2a2; -fx-border-width: 0px 0px 2px 0px;">
+                                                   <children>
+                                                      <TextField fx:id="TxtFNickname14" disable="true" prefHeight="23.0" prefWidth="19.0" style="-fx-background-color: transparent;" HBox.hgrow="ALWAYS">
+                                                         <font>
+                                                            <Font size="12.0" />
+                                                         </font>
+                                                         <HBox.margin>
+                                                            <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                                                         </HBox.margin>
+                                                      </TextField>
+                                                   </children>
+                                                </HBox>
+                                             </children>
+                                          </VBox>
+                                       </children>
+                                       <padding>
+                                          <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+                                       </padding>
+                                       <effect>
+                                          <DropShadow height="10.0" radius="4.5" width="10.0" />
+                                       </effect>
+                                       <HBox.margin>
+                                          <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+                                       </HBox.margin>
+                                    </HBox>
+                                 </children>
+                              </HBox>
+                              <HBox prefHeight="100.0" prefWidth="200.0" VBox.vgrow="ALWAYS">
+                                 <children>
+                                    <VBox prefHeight="203.0" prefWidth="98.0" style="-fx-background-color: white;" styleClass="cursor_hand" HBox.hgrow="ALWAYS">
+                                       <HBox.margin>
+                                          <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+                                       </HBox.margin>
+                                       <effect>
+                                          <DropShadow color="#8d8888" height="10.0" radius="4.5" width="10.0" />
+                                       </effect>
+                                       <children>
+                                          <VBox alignment="TOP_CENTER">
+                                             <children>
+                                                <Text fill="#a79f9b" strokeType="OUTSIDE" strokeWidth="0.0" text="Datos Paciente">
+                                                   <font>
+                                                      <Font size="16.0" />
+                                                   </font></Text>
+                                                <HBox alignment="CENTER" prefHeight="30.0" prefWidth="137.0" VBox.vgrow="ALWAYS">
+                                                   <VBox.margin>
+                                                      <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+                                                   </VBox.margin>
+                                                   <children>
+                                                      <ImageView fitHeight="18.0" fitWidth="18.0">
+                                                         <image>
+                                                            <Image url="@../../data/Nombre.png" />
+                                                         </image>
+                                                      </ImageView>
+                                                      <HBox alignment="CENTER" style="-fx-background-color: transparent; -fx-border-color: #a2a2a2; -fx-border-width: 0px 0px 2px 0px;">
+                                                         <children>
+                                                            <TextField fx:id="TxtFNickname" promptText="username" style="-fx-background-color: transparent;" text="Nombre" HBox.hgrow="ALWAYS">
+                                                               <HBox.margin>
+                                                                  <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                                                               </HBox.margin>
+                                                               <font>
+                                                                  <Font size="12.0" />
+                                                               </font>
+                                                            </TextField>
+                                                         </children>
+                                                      </HBox>
+                                                   </children>
+                                                </HBox>
+                                                <HBox alignment="CENTER" prefHeight="30.0" prefWidth="137.0" VBox.vgrow="ALWAYS">
+                                                   <children>
+                                                      <ImageView fitHeight="18.0" fitWidth="18.0">
+                                                         <image>
+                                                            <Image url="@../../data/Telefono.png" />
+                                                         </image>
+                                                      </ImageView>
+                                                      <HBox alignment="CENTER" style="-fx-background-color: transparent; -fx-border-color: #a2a2a2; -fx-border-width: 0px 0px 2px 0px;">
+                                                         <children>
+                                                            <TextField fx:id="TxtFNickname11" promptText="username" style="-fx-background-color: transparent;" text="Telefono" HBox.hgrow="ALWAYS">
+                                                               <HBox.margin>
+                                                                  <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                                                               </HBox.margin>
+                                                               <font>
+                                                                  <Font size="12.0" />
+                                                               </font>
+                                                            </TextField>
+                                                         </children>
+                                                      </HBox>
+                                                   </children>
+                                                   <VBox.margin>
+                                                      <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+                                                   </VBox.margin>
+                                                </HBox>
+                                                <HBox alignment="CENTER" prefHeight="30.0" prefWidth="137.0" VBox.vgrow="ALWAYS">
+                                                   <children>
+                                                      <ImageView fitHeight="18.0" fitWidth="18.0">
+                                                         <image>
+                                                            <Image url="@../../data/Email.png" />
+                                                         </image>
+                                                      </ImageView>
+                                                      <HBox alignment="CENTER" style="-fx-background-color: transparent; -fx-border-color: #a2a2a2; -fx-border-width: 0px 0px 2px 0px;">
+                                                         <children>
+                                                            <TextField fx:id="TxtFNickname12" promptText="username" style="-fx-background-color: transparent;" text="Email" HBox.hgrow="ALWAYS">
+                                                               <HBox.margin>
+                                                                  <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                                                               </HBox.margin>
+                                                               <font>
+                                                                  <Font size="12.0" />
+                                                               </font>
+                                                            </TextField>
+                                                         </children>
+                                                      </HBox>
+                                                   </children>
+                                                   <VBox.margin>
+                                                      <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+                                                   </VBox.margin>
+                                                </HBox>
+                                                <HBox alignment="CENTER" VBox.vgrow="ALWAYS">
+                                                   <children>
+                                                      <ImageView fitHeight="18.0" fitWidth="18.0">
+                                                         <image>
+                                                            <Image url="@../../data/Fecha.png" />
+                                                         </image>
+                                                      </ImageView>
+                                                      <HBox alignment="CENTER_RIGHT" maxWidth="-Infinity" prefHeight="37.0" prefWidth="135.0" style="-fx-background-color: transparent; -fx-border-color: #a2a2a2; -fx-border-width: 0px 0px 2px 0px;">
+                                                         <children>
+                                                            <TextField fx:id="TxtFNickname121" prefHeight="23.0" prefWidth="76.0" promptText="username" style="-fx-background-color: transparent;" text="Fecha" HBox.hgrow="ALWAYS">
+                                                               <font>
+                                                                  <Font size="12.0" />
+                                                               </font>
+                                                               <HBox.margin>
+                                                                  <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                                                               </HBox.margin>
+                                                            </TextField>
+                                                            <DatePicker prefHeight="35.0" prefWidth="78.0">
+                                                               <padding>
+                                                                  <Insets bottom="4.0" left="4.0" right="4.0" top="4.0" />
+                                                               </padding>
+                                                            </DatePicker>
+                                                         </children>
+                                                      </HBox>
+                                                   </children>
+                                                   <VBox.margin>
+                                                      <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+                                                   </VBox.margin>
+                                                </HBox>
+                                                <HBox alignment="CENTER" VBox.vgrow="ALWAYS">
+                                                   <VBox.margin>
+                                                      <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+                                                   </VBox.margin>
+                                                   <children>
+                                                      <Button mnemonicParsing="false" style="-fx-background-color: white;" styleClass="hover_border">
+                                                         <graphic>
+                                                            <ImageView fitHeight="31.0" fitWidth="33.0">
+                                                               <image>
+                                                                  <Image url="@../../data/Save.png" />
+                                                               </image>
+                                                            </ImageView>
+                                                         </graphic>
+                                                      </Button>
+                                                   </children>
+                                                </HBox>
+                                             </children>
+                                          </VBox>
+                                       </children>
+                                    </VBox>
+                                    <VBox alignment="TOP_CENTER" style="-fx-background-color: white;" styleClass="cursor_hand" HBox.hgrow="ALWAYS">
+                                       <HBox.margin>
+                                          <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+                                       </HBox.margin>
+                                       <effect>
+                                          <DropShadow color="#8d8888" height="10.0" radius="4.5" width="10.0" />
+                                       </effect>
+                                       <children>
+                                          <Text fill="#a79f9b" strokeType="OUTSIDE" strokeWidth="0.0" text="Pacientes Asociados">
+                                             <font>
+                                                <Font size="16.0" />
+                                             </font>
+                                          </Text>
+                                       </children>
+                                    </VBox>
+                                    <VBox alignment="TOP_CENTER" prefHeight="253.0" prefWidth="177.0" style="-fx-background-color: white;" styleClass="cursor_hand" HBox.hgrow="ALWAYS">
+                                       <HBox.margin>
+                                          <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+                                       </HBox.margin>
+                                       <effect>
+                                          <DropShadow color="#8d8888" height="10.0" radius="4.5" width="10.0" />
+                                       </effect>
+                                       <children>
+                                          <Text fill="#a79f9b" strokeType="OUTSIDE" strokeWidth="0.0" text="Mensaje">
+                                             <font>
+                                                <Font size="16.0" />
+                                             </font>
+                                          </Text>
+                                       </children>
+                                    </VBox>
+                                 </children>
+                              </HBox>
+                           </children>
+                        </VBox>
+                     </children>
+                  </VBox>
+               </children>
+            </HBox>
+         </children>
+      </VBox>
+   </children>
+</AnchorPane>
